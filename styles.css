@@ -60,71 +60,97 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
 .card {
-    background-color: var(--white);
-    border-radius: 0.5rem;
-    padding: 1.5rem 2rem 2rem;;
-    position: relative;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem 2rem;;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
 .profile p {
-    margin: -0.125rem;
+  margin: -0.125rem;
 }
 
 .profile-image {
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    border: 2px solid;
+  border-radius: 50%;
+  width: 1.75rem;
+  height: 1.75rem;
+  outline: 2px solid;
 }
 
 .name {
-    font-weight: var(--font-weight-600);
-    font-size: 0.8125rem;
+  font-weight: var(--font-weight-600);
+  font-size: 0.8125rem;
 }
 
 .title {
-    opacity: 0.5;
-    font-size: 0.7rem;
+  opacity: 0.5;
+  font-size: 0.7rem;
 }
 
 h2 {
-    font-size: 1.25rem;
-    line-height: 1.25;
-    opacity: 0.85;
-    color: var(--white);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  opacity: 0.85;
+  color: var(--white);
 }
 
 .review-paragraph {
-    opacity: 0.7;
-    font-size: 0.875rem;
-    line-height: 1.375;
+  opacity: 0.7;
+  font-size: 0.875rem;
+  line-height: 1.375;
 }
 
 #daniel {
-    background-color: var(--moderate-violet);
-    color: var(--light-gray);
+  background-color: var(--moderate-violet);
+  color: var(--light-gray);
 }
 
 #daniel .profile-image, #patrick .profile-image {
-    border-color: var(--ligher-violet);
+  outline-color: var(--ligher-violet);
+}
+
+#jonathan {
+  background-color: var(--very-dark-grayish-blue);
+  color: var(--light-gray);
+}
+
+#jeanette, #kira {
+  background-color: var(--white);
+  color: var(--very-dark-grayish-blue);
+}
+
+#jeanette h2, #kira h2 {
+  color: var(--very-dark-grayish-blue);
+  opacity: 1;
+}
+
+#jonathan .profile-image, #jeanette .profile-image, #kira .profile-image {
+  outline: none;
+}
+
+#patrick {
+  background-color: var(--very-dark-blackish-blue);
+  color: var(--light-gray);
 }
 
 .quotation-mark {
-    position: absolute;
-    top: 0;
-    right: 1.5rem;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  z-index: 0;
 }
