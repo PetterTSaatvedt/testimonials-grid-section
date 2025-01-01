@@ -55,3 +55,55 @@ picture {
   --font-weight-500: 500;
   --font-weight-600: 600;
 }
+
+body {
+  font-family: var(--barlow-semi-condensed);
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--font-weight-500);
+  background-color: var(--light-grayish-blue);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.profile p {
+    margin: -0.125rem;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid;
+}
+
+.name {
+    font-weight: var(--font-weight-600);
+    font-size: 0.875rem;
+}
+
+.title {
+    opacity: 0.5;
+    font-size: 0.75rem;
+}
+
+.review-paragraph {
+    opacity: 0.7;
+    font-size: 0.875rem;
+}
