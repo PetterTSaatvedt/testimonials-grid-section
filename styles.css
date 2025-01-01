@@ -26,11 +26,6 @@ body {
   line-height: 1.5;
 }
 
-/* Set shorter line heights on headings and interactive elements */
-h1, h2, label {
-  line-height: 1.1;
-}
-
 /* Balance text wrapping on headings */
 h1, h2 {
   text-wrap: balance;
@@ -45,6 +40,7 @@ picture {
 
 :root {
   --moderate-violet: hsl(263, 55%, 52%);
+  --ligher-violet: #A775F1;
   --very-dark-grayish-blue: hsl(217, 19%, 35%);
   --very-dark-blackish-blue: hsl(219, 29%, 14%);
   --white: hsl(0, 0%, 100%);
@@ -73,7 +69,8 @@ body {
 .card {
     background-color: var(--white);
     border-radius: 0.5rem;
-    padding: 2rem;
+    padding: 1.5rem 2rem 2rem;;
+    position: relative;
 }
 
 .profile {
@@ -95,15 +92,39 @@ body {
 
 .name {
     font-weight: var(--font-weight-600);
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
 }
 
 .title {
     opacity: 0.5;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    opacity: 0.85;
+    color: var(--white);
 }
 
 .review-paragraph {
     opacity: 0.7;
     font-size: 0.875rem;
+    line-height: 1.375;
+}
+
+#daniel {
+    background-color: var(--moderate-violet);
+    color: var(--light-gray);
+}
+
+#daniel .profile-image, #patrick .profile-image {
+    border-color: var(--ligher-violet);
+}
+
+.quotation-mark {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    z-index: 0;
 }
